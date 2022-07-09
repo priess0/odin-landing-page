@@ -11,6 +11,8 @@
 
 body {
   font-family: Roboto, sans-serif;
+  margin: 0 auto;
+  font-size: 18px;
 }
 
 /* menu */
@@ -44,29 +46,149 @@ ul {
 
 .header {
     background-color: var(--darkbackground);
+    padding: 0 15%;
 }
 
 .header-content {
   display: flex;
+  max-height: 50vh;
+  padding: 10vh 0;
+  gap: 5%;
+
 }
 
 .header-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .header-text h2 {
   color: var(--heromaintext);
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .header-text p {
   color: var(--herosecondarytext);
+}
+
+.header-text button {
+  background-color: var(--buttoncolor);
+  color: var(--herosecondarytext);
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.header-content img {
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+}
+
+/* information content */
+
+.information {
+  padding: 1vh 20% 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.information h3 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.illustrations {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.picntext {
+  display: block;
+  text-align: center;
+}
+
+.picntext img {
+  border: 5px solid var(--buttoncolor);
+  border-radius: 10%;
+  height: 250px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 5%;
+}
+
+figcaption {
+  color: var(--quotetext);
   font-size: 18px;
 }
 
-button {
+/* quote */
+
+.quote {
+  background-color: var(--herosecondarytext);
+  padding: 10vh 20%;
+}
+
+.quote p:nth-of-type(1) {
+  font-style: italic;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+.quote p:nth-of-type(2) {
+  font-weight: 600;
+  text-align: right;
+}
+
+/* call to action*/
+
+.calltoaction {
+  padding: 10vh 15%;
+  color: var(--heromaintext);
+}
+
+.bluetab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--buttoncolor);
+  padding: 2rem 5rem;
+  border-radius: 1rem;
+}
+
+.bluetab *  {
+  margin: 0.1rem;
+}
+
+.bluetab button {
   background-color: var(--buttoncolor);
   color: var(--herosecondarytext);
+  margin: 0;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--heromaintext);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+  /* footer */
+
+footer {
+  background-color: var(--darkbackground);
+  color: var(--heromaintext);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
