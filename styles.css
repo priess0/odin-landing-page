@@ -46,7 +46,7 @@ ul {
 
 .header {
     background-color: var(--darkbackground);
-    padding: 0 15%;
+    padding: 1vh 15% 0;
 }
 
 .header-content {
